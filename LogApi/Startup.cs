@@ -37,7 +37,7 @@ namespace LogApi
                     {
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(configuration.GetValue<string>("ApiSettings:ApiKey"))),
+                            Encoding.UTF8.GetBytes(configuration.GetValue<string>("ApiSettings:SystemKey"))),
                         ValidateIssuer = false,
                         ValidateAudience = false
                     };

@@ -29,7 +29,7 @@ namespace LogApi.Service
             {
                 // authentication successful so generate jwt token
                 var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.ASCII.GetBytes(apiConfigurationModel.ApiKey);
+                var key = Encoding.ASCII.GetBytes(apiConfigurationModel.SystemKey);
 
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
